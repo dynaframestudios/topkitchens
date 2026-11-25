@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Häus of NYCO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
+</head>
+<body>
+    <div class="logo-bg"></div>
+
+    <nav>
+        <div class="nav-left">
+    <span class="haus-text">
+        <span class="white">Häus</span>
+        <span class="gold">Of       </span>
+    </span>
+    <img src="assets/logo.jpeg" alt="Haus of NYCO" style="height: 40px; object-fit: contain;">
+</div>
+
+        <div class="nav-search">
+            <input type="text" id="searchInput" placeholder="Search products…">
+            <button onclick="performSearch()">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <ul class="nav-links desktop-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+
+        <div class="burger" id="burgerBtn">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="mobile-social">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="contact-section">
+            <h1 class="contact-title">Get in Touch</h1>
+            <p class="contact-subtitle">Whether you are exploring our audio collection, comparing product features or looking for more information about a particular model, we would love to hear from you. Contact the Häus of NYCO team to discuss your needs and learn more about the products that interest you.</p>
+
+            <p class="contact-subtitle">For sales enquiries, availability or general product questions, you can reach us using the email addresses or telephone numbers below. Please include the product name and any relevant details so our team can better understand your enquiry.</p>
+
+            <div class="contact-container">
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Message subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+
+                <div class="info-box">
+                    <div class="info-item">
+                        <div class="info-label">Email Us</div>
+                        <div class="info-value"><a href="mailto:info@nyco.co.za">info@nyco.co.za</a></div>
+                    </div>
+					
+					<div class="info-item">
+					    <div class="info-label">Meet The Team</div>
+				        <div class="info-value"><a href="mailto:sales@nyco.co.za">Sales - sales@nyco.co.za</a></div>
+						<div class="info-value"><a href="mailto:msimeki@nyco.co.za">Msimeki - msimeki@nyco.co.za</a></div>
+						<div class="info-value"><a href="mailto:katlego@nyco.co.za">Katlego - katlego@nyco.co.za</a></div>
+					</div>	
+
+                    <div class="info-item">
+                        <div class="info-label">Phone</div>
+                        <div class="info-value"><a href="tel:+27832258839">+27 83 225 8839</a></div>
+						<div class="info-value"><a href="tel:+27715958848">+27 71 595 8848</a></div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Address</div>
+                        <div class="info-value">Street Address<br>City, area code<br>Location</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Hours</div>
+                        <div class="info-value">Monday - Friday: 9am - 6pm<br>Saturday: 10am - 4pm<br>Sunday: Closed</div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Häus of NYCO — Audio for the way you live, work and listen.</p>
+        <p>&copy; 2026 Häus Of NYCO. All rights reserved. | <a href="index.html">Home</a> | <a href="products.html">Products</a></p>
+        <p>Designed By Dynaframe Studios</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const burger = document.getElementById('burgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (burger && mobileMenu) {
+            burger.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+            });
+
+            document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                });
+            });
+        }
+
+        // Search function
+        function performSearch() {
+            const query = document.getElementById('searchInput').value.trim();
+            if (query !== '') {
+                window.location.href = `products.html?search=${encodeURIComponent(query)}`;
+            }
+        }
+
+        document.getElementById('searchInput').addEventListener('keyup', (e) => {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+    </script>
+</body>
+</html>

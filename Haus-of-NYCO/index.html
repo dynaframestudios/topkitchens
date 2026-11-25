@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Häus of NYCO - Premium Audio Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
+</head>
+<body>
+    <div class="logo-bg"></div>
+
+    <nav>
+      <div class="nav-left">
+    <span class="haus-text">
+        <span class="white">Häus</span>
+        <span class="gold">Of </span>
+    </span>
+    <img src="assets/logo.jpeg" alt="Haus of NYCO" style="height: 40px; object-fit: contain;">
+</div>
+
+        <div class="nav-search">
+            <input type="text" id="searchInput" placeholder="Search products…">
+            <button onclick="performSearch()">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <ul class="nav-links desktop-nav">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="burger" id="burgerBtn">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="mobile-social">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Häus of NYCO</h1>
+                <p>Discover a curated collection of audio products designed around the way you listen. From wireless headphones and open-ear headsets to wired and USB audio solutions, Häus of NYCO brings together technology, style and everyday practicality.</p>
+                <p>Whether you are enjoying your favourite music, connecting with colleagues or unwinding with a film, explore audio that fits naturally into your daily routine.</p>
+                <a href="products.html" class="cta-button">View Products</a>
+                <a href="contact.html" class="cta-button">Contact Us</a>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <h2 class="featured-title">Featured Products</h2>
+            <p class="featured-subtitle">Explore a selection of our audio collection, from versatile wireless headphones to open-ear and computer headsets. Each offers a different combination of design, connectivity and features to suit the way you listen, work and relax.</p>
+            <div class="featured-grid" id="featuredGrid">
+                <div class="featured-product">
+                    <div class="featured-image"></div>
+                    <div class="featured-name">Loading...</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2 class="about-title">About Häus Of NYCO</h2>
+            <p class="about-text">At Häus of NYCO, we believe sound is an essential part of everyday life. It connects us to the music we love, the people we speak to and the moments we enjoy. Our approach is to bring together a curated collection of audio products with an emphasis on quality, innovation and practical design.</p>
+            <p class="about-text">Our collection spans wireless headphones, wired computer headsets, open-ear audio and USB audio solutions. We recognise that every listener has different needs: some value the freedom of wireless connectivity, while others prefer the simplicity of a wired connection or the open-ear listening experience.</p>
+            <p class="about-text">By offering a variety of audio styles and features, Häus of NYCO aims to make it easier to find a product that complements your lifestyle. Explore our range, discover the features that matter to you and get in touch with our team if you would like more information before choosing your next audio product.</p>
+        </section>
+		
+		 <section class="product-section">
+            <h2 class="about-title">Our Collection</h2>
+			<p class="about-text">
+			Get a closer look at the designs, finishes and details that make up the Häus of NYCO collection. Our gallery brings together different audio styles, from everyday headphones to open-ear designs, offering a visual introduction to the range.
+            </p>
+            <p class="about-text">Browse the collection for inspiration, then explore our product catalogue for individual specifications, available colours and connectivity options.
+			</p>
+            <div class="marquee-wrapper">
+                <div class="marquee-track">
+                    <img src="assets/marquee1.jpeg" alt="Collection 1">
+                    <img src="assets/marquee2.jpeg" alt="Collection 2">
+                    <img src="assets/marquee3.jpeg" alt="Collection 3">
+                    <img src="assets/marquee4.jpeg" alt="Collection 4">
+                    <img src="assets/marquee5.jpeg" alt="Collection 5">
+                    <img src="assets/marquee6.jpeg" alt="Collection 6">
+                    <img src="assets/marquee7.jpeg" alt="Collection 7">
+                    <img src="assets/marquee8.jpeg" alt="Collection 8">
+                    <img src="assets/marquee9.jpeg" alt="Collection 9">
+					<img src="assets/marquee10.jpeg" alt="Collection 10">
+					<img src="assets/marquee11.jpeg" alt="Collection 11">
+                    <!-- duplicated for seamless loop -->
+                    <img src="assets/marquee1.jpeg" alt="Collection 1">
+                    <img src="assets/marquee2.jpeg" alt="Collection 2">
+                    <img src="assets/marquee3.jpeg" alt="Collection 3">
+                    <img src="assets/marquee4.jpeg" alt="Collection 4">
+                    <img src="assets/marquee5.jpeg" alt="Collection 5">
+                    <img src="assets/marquee6.jpeg" alt="Collection 6">
+                    <img src="assets/marquee7.jpeg" alt="Collection 7">
+                    <img src="assets/marquee8.jpeg" alt="Collection 8">
+                    <img src="assets/marquee9.jpeg" alt="Collection 9">
+					<img src="assets/marquee10.jpeg" alt="Collection 10">
+					<img src="assets/marquee11.jpeg" alt="Collection 11">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Häus of NYCO — Audio for the way you live, work and listen.</p>
+        <p>&copy; 2026 Häus Of NYCO. All rights reserved. | <a href="contact.html">Contact</a> | <a href="products.html">Products</a></p>
+        <p>Designed By Dynaframe Studios</p>
+    </footer>
+
+    <script src="products-data.js"></script>
+    <script>
+        window.renderFeatured = function() {
+            const grid = document.getElementById("featuredGrid");
+            if (!grid || !products) return;
+            
+            const featured = products.slice(0, 4);
+            grid.innerHTML = featured.map(p => `
+                <div class="featured-product" onclick="window.location.href='products.html'">
+                    <div class="featured-image">
+                        <img src="${p.image}" alt="${p.name}" style="max-width: 100%; max-height: 100%;">
+                    </div>
+                    <div class="featured-name">${p.name}</div>
+                </div>
+            `).join("");
+        };
+        
+        window.renderFeatured();
+
+        // Mobile menu toggle
+        const burger = document.getElementById('burgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (burger && mobileMenu) {
+            burger.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+            });
+
+            document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                });
+            });
+        }
+
+        // Search function
+        function performSearch() {
+            const query = document.getElementById('searchInput').value.trim();
+            if (query !== '') {
+                window.location.href = `products.html?search=${encodeURIComponent(query)}`;
+            }
+        }
+
+        document.getElementById('searchInput').addEventListener('keyup', (e) => {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+    </script>
+</body>
+</html>
